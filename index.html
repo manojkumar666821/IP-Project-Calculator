@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Calculator & Offer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading"><span><b>Calculator</b></span> </h1>
+
+    <div class="calculator">
+        <div class="calc-display">
+            <div class="calc-expression" id="calc-expression"></div>
+            <div class="calc-result" id="calc-result">0</div>
+        </div>
+
+        <div class="calc-buttons">
+            <button class="calc-btn special" data-action="clear">AC</button>
+            <button class="calc-btn special" data-action="sign">+/-</button>
+            <button class="calc-btn special" data-action="percent">%</button>
+            <button class="calc-btn operator" data-action="operator" data-value="/">÷</button>
+
+            <button class="calc-btn" data-action="number" data-value="7">7</button>
+            <button class="calc-btn" data-action="number" data-value="8">8</button>
+            <button class="calc-btn" data-action="number" data-value="9">9</button>
+            <button class="calc-btn operator" data-action="operator" data-value="*">×</button>
+
+            <button class="calc-btn" data-action="number" data-value="4">4</button>
+            <button class="calc-btn" data-action="number" data-value="5">5</button>
+            <button class="calc-btn" data-action="number" data-value="6">6</button>
+            <button class="calc-btn operator" data-action="operator" data-value="-">−</button>
+
+            <button class="calc-btn" data-action="number" data-value="1">1</button>
+            <button class="calc-btn" data-action="number" data-value="2">2</button>
+            <button class="calc-btn" data-action="number" data-value="3">3</button>
+            <button class="calc-btn operator" data-action="operator" data-value="+">+</button>
+
+            <button class="calc-btn span2" data-action="number" data-value="0">0</button>
+            <button class="calc-btn" data-action="decimal">.</button>
+            <button class="calc-btn equals" data-action="equals">=</button>
+        </div>
+    </div>
+
+    <section class="offer" id="offer">
+        <h1 class="heading"><span><B>Countdown Timer</B></span> </h1>
+        
+        <div id="countdown" class="countdown">
+            <div class="time-box"><span id="days">00</span><p>Days</p></div>
+            <div class="time-box"><span id="hours">00</span><p>Hours</p></div>
+            <div class="time-box"><span id="minutes">00</span><p>Mins</p></div>
+            <div class="time-box"><span id="seconds">00</span><p>Secs</p></div>
+        </div>
+    </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
